@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form || Learning robo</title>
+    <link rel="stylesheet" href="cont.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Our creative skills & experiences.</h3>
+          <p class="text">
+            Objective to develop franchise to multi-unit
+            operators expand with join sucess.<br>
+
+            Potential to penetrate with cloud kitchens
+            and expands flagship stores <br>
+          </p>
+
+          <div class="info">
+            <div class="information">
+             
+              <p>B ground floor shop no - 1 E-20, vijay nagar
+                new delhi- 110009</p>
+            </div>
+            <div class="information">
+              
+              <p>chai.fellows31@gmail.com</p>
+            </div>
+            <div class="information">
+              
+              <p>+91 9871750815</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/chaifellows2331?mibextid=ZbWKwL">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/FellowsCha52253?t=c67F3kHdQv6Bv1AuFbtdoA&s=09">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/chaifellows?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div><br>
+            
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          
+          <form action="https://formspree.io/f/xoqowrvr" method="POST" autocomplete="off">
+
+            <h3 class="title">Franchise Form</h3>
+            <div class="input-container">
+                <label for="name">Name</label>
+
+                <input class="input" type="text" name="name" placeholder="" id="name"
+                    autocomplete="off" required>
+                <span>Name</span>
+            </div>
+            <div class="input-container">
+                <label for="contact">Phone</label>
+
+                <input class="input" type="text" name="contact number" placeholder="" id="number"
+                    autocomplete="off" required>
+                <span>contact</span>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+
+                <input class="input" type="text" name="email" placeholder="" id="email"
+                    autocomplete="off" required>
+                <span>Email</span>
+            </div>
+            <div class="input-container">
+                <label for="location">Location</label>
+
+                <input class="input" type="text" name="location" placeholder="" id="location"
+                    autocomplete="off" required>
+                <span>Location</span>
+            </div>
+            <div class="input-container">
+                <label for=" Budjet">Investment </label>
+
+                <input class="input" type="text" name="Budjet" placeholder="" id="Budjet"
+                    autocomplete="off" required>
+                <span>Investment</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <script >
+        const inputs = document.querySelectorAll(".input");
+        
+        function focusFunc() {
+          let parent = this.parentNode;
+          parent.classList.add("focus");
+        }
+        
+        function blurFunc() {
+          let parent = this.parentNode;
+          if (this.value == "") {
+            parent.classList.remove("focus");
+          }
+        }
+        
+        inputs.forEach((input) => {
+          input.addEventListener("focus", focusFunc);
+          input.addEventListener("blur", blurFunc);
+        });
+        
+        </script>
+  </body>
+</html>
